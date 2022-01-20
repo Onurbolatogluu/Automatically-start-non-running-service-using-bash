@@ -7,3 +7,4 @@ if [ "$status" == 0 ]; then
    echo "$service is running!!!"
 else
    /bin/systemctl start "$service.service"
+fi
