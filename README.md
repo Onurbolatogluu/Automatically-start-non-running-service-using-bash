@@ -7,8 +7,6 @@ sudo crontab -e
 * * * * *   /usr/bin/service-watcher > /dev/null
 
 Below are some examples for the crontabs
-
-
-- 0 */2 * * *   /usr/bin/service-watcher > /dev/null
-- 0 0 */1 * *   /usr/bin/service-watcher > /dev/null
-- * * * * *   /usr/bin/service-watcher > /dev/null
+0 */2 * * *   /usr/bin/service-watcher > /dev/null
+0 0 */1 * *   /usr/bin/service-watcher > /dev/null
+* * * * *   /usr/bin/service-watcher > /dev/null
