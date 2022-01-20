@@ -1,0 +1,9 @@
+#!/bin/bash
+service=ha-service
+
+/bin/systemctl -q is-active "$service.service"
+status=$?
+if [ "$status" == 0 ]; then
+   echo "$service is running!!!"
+else
+   /bin/systemctl start "$service.service"
